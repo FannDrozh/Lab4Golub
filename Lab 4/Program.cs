@@ -43,7 +43,10 @@ namespace Lab_4
                 x = lnmullog(x);
             }
             return x;
-        }v
+        }
+
+
+
         static double lnmullogZag(double x)
         {
             if (lnmullog(x) <= 0)
