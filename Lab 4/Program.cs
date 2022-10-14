@@ -13,8 +13,7 @@ namespace Lab_4
             Console.WriteLine("Лабораторная 4");
             double x = Convert.ToDouble(Console.ReadLine());          
             Console.WriteLine("Ответ: " + Answer(x));
-            lnmullogZag(x);
-            Console.WriteLine(lnmullogZag(x));
+            Console.WriteLine(Log(x,5));
             Console.ReadKey();
         }
         public static int returnNull(double x) { return 0; }
@@ -44,9 +43,6 @@ namespace Lab_4
             }
             return x;
         }
-
-
-
         static double lnmullogZag(double x)
         {
             if (lnmullog(x) <= 0)
@@ -76,6 +72,8 @@ namespace Lab_4
             }
             return x;
         }
+
+
         static double powsinpluscos(double x)
         {
             double sincos = Pow((Sin(x) + Cos(x)) + Cos(x), 2);
@@ -111,8 +109,7 @@ namespace Lab_4
 
         public static double Cos(double x)
         {
-            x *= Math.PI / 100;
-            const int iterations = 30;
+            const int iterations = 1800;
             var res = 0d;
             var pow = 1d;
             var sign = 1;
@@ -138,6 +135,7 @@ namespace Lab_4
             }
             return f;
         }
+
         public static double Log(double x, double a)
         {
             double start, end = 0, middle = 0, accuracy = 5;
